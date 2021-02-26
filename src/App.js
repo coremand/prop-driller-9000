@@ -25,10 +25,16 @@ export default class App extends React.Component {
     ]
   }
 
+  transformerImage = () => {
+    this.state.proptimusii.map(character => {
+      return character.url
+    })
+  }
+ 
   render() {
     return (
       <div className="App">
-        <Header />
+        <Header image = {this.state.proptimusLogo} urls = {this.transformerImage()}/>
       </div>
     );
   }

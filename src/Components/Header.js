@@ -1,11 +1,12 @@
 import React from 'react';
+import TransformersSection from '../Containers/TransformersSection'
 
-function Header() {
+function Header(props) {
 
   return (
     <header>
       <img
-        src = ""
+        src = {props.image}
         alt = "logo"
       />
     </header>
